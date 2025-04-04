@@ -10,7 +10,7 @@ public class GameContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=StartingEFCore;Trusted_Connection=True;");
+        optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=StartingEFCore;Trusted_Connection=True;"); //localdb ended up working for me. When I tried sqllocaldb I received a litany of exception messages
     }
 
     // Seed Method
